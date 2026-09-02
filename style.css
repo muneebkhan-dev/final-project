@@ -1,0 +1,35 @@
+
+    
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .hero-section {
+      background: blue;
+      padding: 110px 0 90px;
+    }
+
+    .service-card, .feature-card {
+      border: none;
+    }
+    
+    
+    
+    .icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: blue;
+      border-radius: 30px;
+      
+    }
+
+    .section-title {
+      max-width: 600px;
+      margin: 0 auto 50px;
+    }
+  
