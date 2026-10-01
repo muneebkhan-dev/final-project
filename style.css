@@ -1,35 +1,84 @@
+.section {
+    margin: 50px;
+}
 
-    
+.main {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+}
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    .hero-section {
-      background: blue;
-      padding: 110px 0 90px;
-    }
 
-    .service-card, .feature-card {
-      border: none;
-    }
-    
-    
-    
-    .icon-box {
-      width: 60px;
-      height: 60px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: blue;
-      border-radius: 30px;
-      
-    }
 
-    .section-title {
-      max-width: 600px;
-      margin: 0 auto 50px;
-    }
-  
+.title {
+    background-color: rgb(236, 5, 159);
+    text-align: center;
+    height: 50px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+
+.icon {
+    
+    margin: 10px;
+}
+
+
+
+
+.hero {
+    border-bottom: 1px solid black;
+    position: relative;
+    height: 150px;
+}
+
+.img {
+    height: 130px;
+    position: absolute;
+    right: 20px;
+    top: 1px;
+}
+
+
+
+
+.form-area {
+    padding: 35px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 12px;
+}
+
+td:first-child {
+    text-align: right;
+    font-weight: bold;
+} 
+
+input {
+    width: 250px;
+    height: 30px;
+}
+
+
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+}
+
+
+
+.button{
+    background-color: rgb(245, 112, 201);
+    text-align: center;
+    height: 50px;
+    border-top: 1px solid black;
+}
