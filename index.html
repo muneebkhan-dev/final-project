@@ -1,154 +1,169 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>TechStore - Home</title>
 
-    <link rel="stylesheet" href="assests/css/layout.css">
-    <link rel="stylesheet" href="assests/css/style.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer">
-    <script>
-
-        function Result(){
-
-            Unm=document.getElementById('Unm').value;
-            pass=document.getElementById('pass').value;
-            cpass=document.getElementById('cpass').value;
-            em=document.getElementById('em').value;
-            nm=document.getElementById('nm').value;
-            Lnm=document.getElementById('Lnm').value;
-            
-
-            if(Unm=="" || pass=="" || cpass=="" || em=="" || nm=="" || Lnm==""){
-                alert("Please fill out these Field")
-            }else if(pass.length<8){
-                alert("Youre password is too short write minimum 8 character")
-            }else if(cpass!=pass){
-                alert("Youre password is not match Please enter the correct password")
-            }else if(check == false){
-                alert("Please agree to the Terms of Service");
-            }else{
-                alert("Done")
-            }
-        }
-
-
-
-    </script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 </head>
 
 <body>
 
-    <section class="section">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechStore</a>
 
-        <div class="main">
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            
-            <div class="title">
-
-                <h2 class="pt-1">Signup</h2>
-
-                <span class="position-absolute top-0 end-0">
-                    <i class="fa-solid fa-circle-xmark icon"></i>
-                </span>
-
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-
-
-            
-            <div class="hero">
-
-                <h5 class="my-3 ms-2">
-                    Already have an account?
-                    <span class="text-primary">Login.</span>
-                </h5>
-
-                <h4 class="text-primary ms-2 mt-5">
-                    Login
-                   
-                </h4>
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdYdIroHneLxjIIY8rewSbjtuEN6Sj6QNZrpXSp17z8Q&s=10"
-                    class="img"
-                    alt="GIIT Logo">
-
-            </div>
-
-
-            
-            <div class="form-area">
-
-                <table>
-
-                    <tr>
-                        <td>Username:</td>
-                        <td>
-                            <input type="text" id="Unm">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Password:</td>
-                        <td>
-                            <input type="password" id="pass">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Confirm Password:</td>
-                        <td>
-                            <input type="password" id="cpass">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Email Address:</td>
-                        <td>
-                            <input type="email" id="em">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>First Name:</td>
-                        <td>
-                            <input type="text" id="nm">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Last Name:</td>
-                        <td>
-                            <input type="text" id="Lnm">
-                        </td>
-                    </tr>
-
-                </table>
-
-            </div>
-
-            
-
-            <div class="mb-3 ms-3 form-check">
-                <input type="checkbox" class="form-check-input" id="checkbox">
-                <label class="form-check-label" for="exampleCheck1">
-                    I have read the Groveshark Terms of Service (Open in a new window)
-                </label>
-            </div>
-
-          
-
-            <div class="button">
-                <button type="submit" class="btn btn-outline-secondary px-3 mt-1" onclick="Result()">Signup</button>
-            </div>
-
         </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <h1 class="fw-bold">Discover the Latest Tech</h1>
+
+                    <p class="text-secondary mt-3">
+                        Explore quality gadgets and accessories
+                        at affordable prices.
+                    </p>
+
+                    <a href="#products" class="btn btn-primary mt-2">
+                        Shop Now
+                    </a>
+                </div>
+
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <img
+                        src="https://placehold.co/600x350/e9ecef/212529?text=Latest+Tech"
+                        class="img-fluid rounded"
+                        alt="Latest technology products">
+                </div>
+
+            </div>
+        </div>
     </section>
+
+    <!-- Products Section -->
+    <section class="py-5" id="products">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-4">Featured Products</h2>
+
+            <div class="row g-4">
+
+                <!-- Product 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                            src="https://placehold.co/400x250/f1f3f5/212529?text=Headphones"
+                            class="card-img-top"
+                            alt="Headphones">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Headphones</h5>
+                            <p class="card-text text-secondary">
+                                Enjoy clear sound and comfortable listening.
+                            </p>
+                            <h5 class="text-primary">Rs. 3,500</h5>
+                            <a href="#" class="btn btn-primary">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                            src="https://placehold.co/400x250/f1f3f5/212529?text=Smartwatch"
+                            class="card-img-top"
+                            alt="Smartwatch">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Smartwatch</h5>
+                            <p class="card-text text-secondary">
+                                Track your daily activity with ease.
+                            </p>
+                            <h5 class="text-primary">Rs. 5,000</h5>
+                            <a href="#" class="btn btn-primary">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <img
+                            src="https://placehold.co/400x250/f1f3f5/212529?text=Bluetooth+Speaker"
+                            class="card-img-top"
+                            alt="Bluetooth speaker">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Bluetooth Speaker</h5>
+                            <p class="card-text text-secondary">
+                                Enjoy your favorite music anywhere.
+                            </p>
+                            <h5 class="text-primary">Rs. 2,500</h5>
+                            <a href="#" class="btn btn-primary">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-light py-4" id="about">
+        <div class="container text-center">
+            <h2>About TechStore</h2>
+            <p class="text-secondary mb-0">
+                We offer useful technology products at affordable prices.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3" id="contact">
+        <p class="mb-1">Contact: info@techstore.com</p>
+        <p class="mb-0">&copy; 2026 TechStore. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
